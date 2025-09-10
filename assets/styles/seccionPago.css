@@ -1,0 +1,255 @@
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    --padding_grid_seccion: 1rem;
+    max-width: calc(100% - var(--padding_grid_seccion));
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+.grid-seccion {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 0 0 1rem;
+    background-color: #ccc;
+}
+
+/* ---- Seccion Carro ---- */
+
+.seccion-card {
+    width: auto;
+    height: auto;
+    background-color: blueviolet;
+}
+
+.titulo-seccion-card {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.titulo-seccion-card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.card-producto {
+    width: auto;
+    height: auto;
+    background-color: brown;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contain-checkbox {
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-content-producto {
+    width: 100%;
+    height: auto;
+    background-color: rgb(128, 111, 111);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-producto {
+    max-width: 70%;
+    height: auto;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contain-image-producto {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: #ccc;
+    margin: 0 .7rem 0 .7rem;
+}
+
+.contain-image-producto img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.desc-producto {
+    max-width: 20rem;
+    width: auto;
+    height: auto;
+    background-color: blue;
+}
+
+.contador-producto {
+    width: 4.5rem;
+    height: 2rem;
+    background-color: rgb(14, 206, 206);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contador-producto button {
+    all: unset;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(231, 231, 231);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: #343e49;
+}
+
+/* ---- Seccion Resumen Compra ---- */
+
+.seccion-resumen-compra {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem 0 1rem;
+    background-color: crimson;
+}
+
+.contain-compra {
+    background-color: #ccc;
+}
+
+.title-resumen-compra h1 {
+    color: #1f262c;
+}
+
+.seccion-desc-resumen-compra {
+    max-width: calc(100% - 2rem);
+    width: 20rem;
+    height: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #ffffff;
+}
+
+.content-desc-resumen-compra {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.header-resumen-compra {
+    width: 100%;
+    height: auto;
+}
+
+.header-resumen-compra span {
+    font-size: 1.1rem;
+    color: #1f262c;
+    font-weight: 600;
+}
+
+.linea-separatoria {
+    border: none;              /* elimina los bordes por defecto */
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.contain-cobros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+}
+
+.contain-cobros span {
+    font-size: 1.1rem;
+    color: #21272e;
+    font-weight: 600;
+}
+
+.titulos-cobros {
+    width: auto;
+    height: 7.5rem;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+
+.cobros {
+    width: auto;
+    height: 7.5rem;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end; 
+    flex-direction: column;
+}
+
+.content-btn-pagar {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.btn-pagar-style {
+    all: unset;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    color: #fff;
+    background-color: #343e49;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn-pagar-style:hover {
+    background-color: #242b33;
+}
+
+
