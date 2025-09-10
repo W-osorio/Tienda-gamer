@@ -1,6 +1,30 @@
 
 header {
-    background-color: rgb(255, 0, 0);
+    width: auto;
+    height: 5rem;
+    position: relative;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    background-color: rgb(4, 123, 235);
+    color: white;
+    width: 6rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 0 1rem;
+    transition: .3s ease-in-out;
+}
+
+a:hover {
+    background-color: rgb(4, 102, 194);
+    cursor: pointer;
 }
 
 
