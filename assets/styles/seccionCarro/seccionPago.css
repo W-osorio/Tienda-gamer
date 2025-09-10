@@ -18,21 +18,32 @@ body {
     background-color: #f1f1f1;
 }
 
+
+/* ---- Seccion Carro ---- */
+
+.seccion-pago {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: .5rem 0 .5rem 0;
+}
+
 .grid-seccion {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 0 0 0 1rem;
-    background-color: #ccc;
+    background-color: transparent;
 }
-
-/* ---- Seccion Carro ---- */
 
 .seccion-card {
     width: auto;
     height: auto;
-    background-color: blueviolet;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+    border-radius: .5rem;
+    padding: 1rem;
 }
 
 .titulo-seccion-card {
@@ -42,20 +53,21 @@ body {
     justify-content: start;
     align-items: center;
     flex-direction: row;
-    background-color: aqua;
+    background-color: transparent;
+    color: #29323a;
 }
 
 .titulo-seccion-card span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: transparent;
 }
 
 .card-producto {
     width: auto;
     height: auto;
-    background-color: brown;
+    background-color: transparent;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -74,7 +86,7 @@ body {
 .contain-content-producto {
     width: 100%;
     height: auto;
-    background-color: rgb(128, 111, 111);
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +96,7 @@ body {
 .content-producto {
     max-width: 70%;
     height: auto;
-    background-color: coral;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +106,7 @@ body {
 .contain-image-producto {
     width: 6.5rem;
     height: 6.5rem;
-    background-color: #ccc;
+    background-color: transparent;
     margin: 0 .7rem 0 .7rem;
 }
 
@@ -106,16 +118,39 @@ body {
 }
 
 .desc-producto {
-    max-width: 20rem;
+    max-width: 15rem;
     width: auto;
     height: auto;
-    background-color: blue;
+    background-color: transparent;
 }
+
+.desc-producto h3, p {
+    margin: 0;
+}
+
+.desc-producto h3 {
+    font-size: 1.4rem;
+    overflow-wrap: break-word;
+    white-space: normal;     /* Permite saltos de línea normales */
+}
+
+.marca-producto {
+    font-size: 1.20rem;
+}
+
+.estado-producto {
+    font-size: .9rem;
+}
+
+.precio-producto {
+    font-size: .9rem;
+}
+
 
 .contador-producto {
     width: 4.5rem;
     height: 2rem;
-    background-color: rgb(14, 206, 206);
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,24 +166,41 @@ body {
     text-align: center;
     border-radius: .5rem;
     background-color: #343e49;
+    transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
+.contador-producto button:hover {
+    background-color: #232930;
+
+}
+
+
+
+
+
 /* ---- Seccion Resumen Compra ---- */
+
+
+
+
 
 .seccion-resumen-compra {
     width: auto;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
     padding: 0 1rem 0 1rem;
-    background-color: crimson;
+    background-color: transparent;
 }
 
 .contain-compra {
-    background-color: #ccc;
+    background-color: transparent;
 }
 
-.title-resumen-compra h1 {
+.title-resumen-compra h2 {
     color: #1f262c;
 }
 
@@ -162,6 +214,7 @@ body {
     flex-direction: column;
     padding: 1rem;
     border-radius: .5rem;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
     background-color: #ffffff;
 }
 
@@ -172,7 +225,7 @@ body {
     justify-content: space-evenly;
     align-items: start;
     flex-direction: column;
-    background-color: blue;
+    background-color: transparent;
 }
 
 .header-resumen-compra {
@@ -198,7 +251,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: coral;
+    background-color: transparent;
 }
 
 .contain-cobros span {
@@ -210,7 +263,7 @@ body {
 .titulos-cobros {
     width: auto;
     height: 7.5rem;
-    background-color: crimson;
+    background-color: transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: start;
@@ -220,7 +273,7 @@ body {
 .cobros {
     width: auto;
     height: 7.5rem;
-    background-color: crimson;
+    background-color: transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: end; 
@@ -233,7 +286,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: transparent;
 }
 
 .btn-pagar-style {
