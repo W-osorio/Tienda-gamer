@@ -15,34 +15,34 @@
     </header>
 
     <div class="root">
-        <form class="form" action="post">
+        <form id="form">
             <div class="container-1">
                 <div class="container-2">
                     <h2>Dirección de envío</h2>
                     <div class="container-3">
                         <div class="container-inputs">
                             <label>Ciudad:</label>
-                            <input class="input-form" type="text">
+                            <input class="input-form" name="ciudad" type="text">
                         </div>
                         <div class="container-inputs">
                             <label>Localidad/Comuna:</label>
-                            <input class="input-form" type="text">
+                            <input class="input-form" name="comuna" type="text">
                         </div>
                         <div class="container-inputs">
                             <label>Calle:</label>
-                            <input class="input-form" type="text">
+                            <input class="input-form" name="calle" type="text">
                         </div>
                         <div class="container-inputs">
                             <label>N° Calle:</label>
-                            <input class="input-form input-num-calle" type="text">
+                            <input class="input-form input-num-calle" name="num_calle" type="number">
                         </div>
                         <div class="container-inputs">
                             <label>Email:</label>
-                            <input class="input-form" type="email">
+                            <input class="input-form" type="email" name="email">
                         </div>
                         <div class="container-inputs">
                             <label>Celular:</label>
-                            <input class="input-form input-celular" type="number">
+                            <input class="input-form input-celular" type="number" name="celular">
                         </div>
                     </div>
                 </div>
@@ -51,23 +51,23 @@
                     <div class="container-5">
                         <div class="container-inputs">
                             <label>Nombre tarjeta:</label>
-                            <input class="input-form input-nombre" type="text">
+                            <input class="input-form input-nombre" type="text" name="nom_tarjeta">
                         </div>
                         <div class="container-inputs">
                             <label>N° Tarjeta:</label>
-                            <input class="input-form input-num-tarjeta" type="number">
+                            <input class="input-form input-num-tarjeta" type="number" name="num_tarjeta">
                         </div>
                         <div class="container-inputs">
                             <label>Expiración:</label>
-                            <input class="input-form" type="text">
+                            <input class="input-form" type="text" name="exp">
                         </div>
                         <div class="container-inputs">
                             <label>CVV:</label>
-                            <input class="input-form input-cvv" type="number">
+                            <input class="input-form input-cvv" type="number" name="cvv">
                         </div>
                     </div>
                 </div>
-                <button id="btn-form">Pagar</button>
+                <button type="button" id="btn-form">Pagar</button>
             </div>
         </form>
     </div>
