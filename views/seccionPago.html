@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../assets/styles/seccionCarro/form.css">
     <link rel="stylesheet" href="../assets/styles/seccionCarro/header.css">
     <link rel="stylesheet" href="../assets/styles/seccionCarro/checkboxProducto.css">
     <link rel="stylesheet" href="../assets/styles/seccionCarro/seccionPago.css">
@@ -12,67 +13,71 @@
     <header>
         <a href="catalogo.html">ir a home</a>
     </header>
+
+    <div class="root">
+        <form class="form" action="post">
+            <div class="container-1">
+                <div class="container-2">
+                    <h2>Dirección de envío</h2>
+                    <div class="container-3">
+                        <div class="container-inputs">
+                            <label>Ciudad:</label>
+                            <input type="text">
+                        </div>
+                        <div class="container-inputs">
+                            <label>Localidad/Comuna:</label>
+                            <input type="text">
+                        </div>
+                        <div class="container-inputs">
+                            <label>Calle:</label>
+                            <input type="text">
+                        </div>
+                        <div class="container-inputs">
+                            <label>N° Calle:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-4">
+                    <h2>Sección de pago</h2>
+                    <div class="container-5">
+                        <div class="container-inputs">
+                            <label>Nombre tarjeta:</label>
+                            <input type="text">
+                        </div>
+                        <div class="container-inputs">
+                            <label>N° Tarjeta:</label>
+                            <input type="number">
+                        </div>
+                        <div class="container-inputs">
+                            <label>Expiración:</label>
+                            <input type="text">
+                        </div>
+                        <div class="container-inputs">
+                            <label>CVV:</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     
     <section class="seccion-pago">
         <div class="grid-seccion">
             <div class="contain-cards">
                 <div class="titulo-seccion-card">
                     <h2>Carro</h2>
-                    <span>(1 producto)</span>
                 </div>
-                <div class="seccion-card">
+                <div class="seccion-card" id="container-carro">
                     <!-- START CARDS -->
 
-                    <div class="card-producto">
-                        <div class="contain-checkbox">
-                            <div class="checkbox-wrapper-12">
-                                <div class="cbx">
-                                    <input checked="" type="checkbox" id="checkbox-producto">
-                                    <label for="cbx-12"></label>
-                                    <svg fill="none" viewBox="0 0 15 14" height="14" width="15">
-                                    <path d="M2 8.36364L6.23077 12L13 2"></path>
-                                    </svg>
-                                </div>
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                    <filter id="goo-12">
-                                        <feGaussianBlur result="blur" stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
-                                        <feColorMatrix result="goo-12" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" mode="matrix" in="blur"></feColorMatrix>
-                                        <feBlend in2="goo-12" in="SourceGraphic"></feBlend>
-                                    </filter>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="contain-content-producto">
-                            <div class="content-producto">
-                                <div class="contain-image-producto">
-                                    <img src="../public/image/public.jpg" alt="img-1">
-                                </div>
-                                <div class="desc-producto">
-                                    <h3>titulo productos</h3>
-                                    <p class="marca-producto">marca</p>
-                                    <p class="estado-producto">estado</p>
-                                    <p class="precio-producto">precio</p>
-                                </div>
-                            </div>
-                            <div class="contador-producto producto">
-                                <button id="btn-restar"><span>-</span></button>
-                                <span id="contador">0</span>
-                                <button id="btn-sumar"><span>+</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <hr class="linea-separatoria">
-
                     <!-- END CARDS -->
-
                 </div>
             </div>
 
 
-            <div class="seccion-resumen-compra">
+            <div class="seccion-resumen-compra" id="container-compra">
                 <div class="title-resumen-compra">
                     <h2>Resumen de la Compra</h2>
                 </div>
@@ -80,7 +85,7 @@
                     <div class="seccion-desc-resumen-compra">
                         <div class="content-desc-resumen-compra">
                             <div class="header-resumen-compra">
-                                <span>Productos (2)</span>
+                                <span>Productos <span>(</span><span class="cant-producto">0</span><span>)</span></span>
                                 <hr class="linea-separatoria">
                             </div>
                             <div class="contain-cobros">
@@ -91,10 +96,10 @@
                                     <span>total:</span>
                                 </div>
                                 <div class="cobros">
-                                    <span>valor1</span>
-                                    <span>valor2</span>
-                                    <span>valor3</span>
-                                    <span>valor4</span>
+                                    <span id="sub-total">0</span>
+                                    <span id="iva">0</span>
+                                    <span id="descuento">0</span>
+                                    <span id="total">0</span>
                                 </div>
                             </div>
                         </div>
@@ -107,5 +112,9 @@
         </div>
     </section>
 </body>
-<script src="../scripts/seccionCarro/botonCambiarCifra.js"></script>
+<script type="module" src="../scripts/seccionCarro/mostrarItems.js"></script>
+<script type="module" src="../scripts/seccionCarro/botonCambiarCifra.js"></script>
+<script type="module" src="../scripts/seccionCarro/calcularPago.js"></script>
+<script type="module" src="../scripts/seccionCarro/styleForm.js"></script>
+<script type="module" src="../scripts/seccionCarro/inputCheckCard.js"></script>
 </html>

@@ -4,7 +4,7 @@
         "nombre": "Catan",
         "marca": "toys",
         "estado": "Nuevo",
-        "precio": 29000,
+        "precio": 1000,
         "desc": "Juego de estrategia donde compites por colonizar y expandirte en la isla de Catan.",
         "poster": "../public/image/catan.jpg"
     },

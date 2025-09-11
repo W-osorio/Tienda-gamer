@@ -22,7 +22,7 @@ fetch('../../data/productos.json')
 
         `;
         card.append(boton);
-        container.append(card);
+        container.append(card)
 
     });
 

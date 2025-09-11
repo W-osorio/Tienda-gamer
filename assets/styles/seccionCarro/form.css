@@ -1,0 +1,49 @@
+
+.root {
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(0);
+    transform-origin: top;
+    transition: .3s ease-in-out;
+}
+
+.container-1 {
+    width: 24rem;
+    height: 30rem;
+    background-color: #242d36;
+    color: rgb(245, 245, 245);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: .4rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.container-2, .container-4 {
+    width: 100%;
+    height: auto;
+}
+
+.container-3, .container-5 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.container-inputs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
