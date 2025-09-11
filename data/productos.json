@@ -1,0 +1,66 @@
+[
+    {
+        "nombre": "Catan",
+        "marca": "toys",
+        "estado": "Nuevo",
+        "precio": 29000,
+        "desc": "Juego de estrategia donde compites por colonizar y expandirte en la isla de Catan.",
+        "poster": "../public/image/catan.jpg"
+    },
+    {
+        "nombre": "Carcassone",
+        "marca": "toys",
+        "estado": "Nuevo",
+        "precio": 24990,
+        "desc": "Juego de colocación de fichas para construir paisajes medievales. Fácil de aprender.",
+        "poster":"../public/image/carcassone.jpg"
+    },
+    {
+        "nombre": "Joystick Xbox Series X",
+        "marca": "Xbox",
+        "estado": "Nuevo",
+        "precio": 45990,
+        "desc": "Mando inalámbrico con botones mapeables y respuesta táctil mejorada.",
+        "poster":"../public/image/joystick_xbox_series.jpg"
+    },
+    {
+        "nombre": "Auriculares HyperX Cloud II",
+        "marca": "HyperX",
+        "estado": "Nuevo",
+        "precio": 26000,
+        "desc": "Sonido envolvente de calidad, micrófono desmontable y gran comodidad.",
+        "poster":"../public/image/auriculares.jpg"
+    },
+    {
+        "nombre": "Play Station 5",
+        "marca": "Sony",
+        "estado": "Reacondicionado",
+        "precio": 600000,
+        "desc": "Consola de última generación con gráficos impresionantes y carga ultrarrápida.",
+        "poster":"../public/image/ps5.jpg"
+    },
+    {
+        "nombre": "PC Gamer ASUS ROG Strix",
+        "marca": "Asus",
+        "estado": "Reacondicionado",
+        "precio": 759990,
+        "desc": "Equipo potente diseñado para gamers exigentes con máximo rendimiento.",
+        "poster":"../public/image/notebook_gamer_asus.jpg"
+    },
+    {
+        "nombre": "Silla Gamer Secretlab Titan",
+        "marca": "Asus",
+        "estado": "Nuevo",
+        "precio": 75990,
+        "desc": "Sensor de alta precisión con botones personalizables para máximo control.",
+        "poster":"../public/image/silla_gamer.jpg"
+    },
+    {
+        "nombre": "Mousepad Razer Goliathus",
+        "marca": "Razer",
+        "estado": "Nuevo",
+        "precio": 15990,
+        "desc": "Superficie amplia con iluminación RGB personalizable para mayor estilo.",
+        "poster":"../public/image/mousepad.jpg"
+    }
+]
