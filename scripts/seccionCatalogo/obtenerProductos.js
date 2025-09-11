@@ -1,30 +1,32 @@
 
-
+import { btnAñadirAlCarro } from "./botonAñadirProducto.js";
 
 fetch('../../data/productos.json')
-    .then(res => res.json())
-    .then(data => {
-        const container = document.getElementById('productos-container');
+.then(res => res.json())
+.then(data => {
+    const container = document.getElementById('productos-container');
 
-        data.forEach(producto => {
-            
-            const card = document.createElement('div');
-            card.classList.add("card");
-            console.log(producto.poster)
-            card.innerHTML = `
+    data.forEach(producto => {
+        
+        const boton = btnAñadirAlCarro();
+        boton.dataset.id = producto.id;
+        
+        const card = document.createElement('div');
+        card.classList.add("card");
+        card.innerHTML = `
 
-                <img src=${producto.poster} alt="${producto.nombre}">
-                <h3>${producto.nombre}</h3>
-                <p class="price">$${producto.precio} CLP</p>
-                <p class="desc">${producto.desc}</p>
-                <button class="Button">Añadir al carrito</button>
+            <img src=${producto.poster} alt="${producto.nombre}">
+            <h3>${producto.nombre}</h3>
+            <p class="price">$${producto.precio} CLP</p>
+            <p class="desc">${producto.desc}</p>
 
-            `;
-            container.append(card);
+        `;
+        card.append(boton);
+        container.append(card);
 
-        });
+    });
 
-    }).catch(error => console.error("Error cargando JSON:", error));
+}).catch(error => console.error("Error cargando JSON:", error));
 
 
 

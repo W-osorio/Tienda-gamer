@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "nombre": "Catan",
         "marca": "toys",
         "estado": "Nuevo",
@@ -8,6 +9,7 @@
         "poster": "../public/image/catan.jpg"
     },
     {
+        "id": 2,
         "nombre": "Carcassone",
         "marca": "toys",
         "estado": "Nuevo",
@@ -16,6 +18,7 @@
         "poster":"../public/image/carcassone.jpg"
     },
     {
+        "id": 3,
         "nombre": "Joystick Xbox Series X",
         "marca": "Xbox",
         "estado": "Nuevo",
@@ -24,6 +27,7 @@
         "poster":"../public/image/joystick_xbox_series.jpg"
     },
     {
+        "id": 4,
         "nombre": "Auriculares HyperX Cloud II",
         "marca": "HyperX",
         "estado": "Nuevo",
@@ -32,6 +36,7 @@
         "poster":"../public/image/auriculares.jpg"
     },
     {
+        "id": 5,
         "nombre": "Play Station 5",
         "marca": "Sony",
         "estado": "Reacondicionado",
@@ -40,6 +45,7 @@
         "poster":"../public/image/ps5.jpg"
     },
     {
+        "id": 6,
         "nombre": "PC Gamer ASUS ROG Strix",
         "marca": "Asus",
         "estado": "Reacondicionado",
@@ -48,6 +54,7 @@
         "poster":"../public/image/notebook_gamer_asus.jpg"
     },
     {
+        "id": 7,
         "nombre": "Silla Gamer Secretlab Titan",
         "marca": "Asus",
         "estado": "Nuevo",
@@ -56,6 +63,7 @@
         "poster":"../public/image/silla_gamer.jpg"
     },
     {
+        "id": 8,
         "nombre": "Mousepad Razer Goliathus",
         "marca": "Razer",
         "estado": "Nuevo",
