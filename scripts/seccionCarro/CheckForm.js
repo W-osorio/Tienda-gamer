@@ -8,27 +8,37 @@ btn_form.addEventListener('click', (e) => {
     e.preventDefault();
 
     const inputs = document.querySelectorAll('.input-form');
+    const input_nombre = document.querySelector('.input-nombre').value.trim();
     const input_celular = document.querySelector('.input-celular').value.trim();
     const input_num_calle = document.querySelector('.input-num-calle').value.trim();
     const input_num_tarjeta = document.querySelector('.input-num-tarjeta').value.trim();
     const input_cvv = document.querySelector('.input-cvv').value.trim();
     const form = document.getElementById('form');
-    
+
     let vacio = Array.from(inputs).some(input => 
         input.value.trim() == "" || 
         input.value.trim() == null);
 
+    const alfabetico = /^[a-zA-Z\s]+$/;
 
     if(vacio) {
         alert("* Parece que dejaste algunos campos vacíos. Completa todos para continuar.")
-    }else if(input_celular.length < 8) {
+        return
+    }else if(input_celular.length <= 8) {
         alert("* La contraseña debe tener minimo 8 caracteres.")
+        return
     }else if(input_num_calle <= 0) {
         alert("* El numero de calle debe ser al menos 1")
+        return
     }else if(input_num_tarjeta.length != 16) {
         alert("El numero de tarjeta debe ser de al menos 16 caracteres");
+        return
     }else if(input_cvv.length != 3) {
         alert("El numero de cvv debe tener 3 caracteres");
+        return
+    }else if (!alfabetico.test(input_nombre)) {
+        alert("* El nombre solo puede contener letras y espacios.");
+        return; // corta la ejecución aquí
     }
 
     const obj = Object.fromEntries(new FormData(form));
@@ -47,7 +57,7 @@ btn_form.addEventListener('click', (e) => {
     }
 
     alert(
-        "DATOS ENVIADOS\n" +
+        "*** DATOS ENVIADOS ***\n" +
         "Ciudad: " + data.ciudad + "\n" +
         "Comuna: " + data.comuna + "\n" +
         "Calle: " + data.calle + "\n" +
