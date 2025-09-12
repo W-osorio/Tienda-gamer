@@ -5,7 +5,6 @@ const btn_form = document.getElementById('btn-form');
 
 
 btn_form.addEventListener('click', (e) => {
-    e.preventDefault();
 
     const inputs = document.querySelectorAll('.input-form');
     const input_nombre = document.querySelector('.input-nombre').value.trim();
@@ -70,5 +69,5 @@ btn_form.addEventListener('click', (e) => {
         "CVV: " + data.cvv
     );
 
-
+    localStorage.clear();
 })
